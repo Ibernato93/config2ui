@@ -1,0 +1,25 @@
+app:
+  name: "Config2UI"
+  version: "1.0.0"
+  debug_mode: false
+
+server:
+  port: 3000
+  allowed_hosts:
+    - "localhost"
+    - "127.0.0.1"
+    - "config2ui.local"
+
+database:
+  engine: "sqlite"
+  path: "./data/db.sqlite3"
+  backup:
+    enabled: true
+    schedule: "0 3 * * *"   # backup giornaliero alle 03:00
+
+features:
+  enable_cache: true
+  cache_timeout: 60
+  beta_features:
+    - "dark_mode"
+    - "auto_save"
