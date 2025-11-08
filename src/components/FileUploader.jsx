@@ -21,7 +21,7 @@ export default function FileUploader({ onUpload }) {
         onClick={() => inputRef.current?.click()}
         className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-md transition-transform transform hover:scale-105"
       >
-        📂 Scegli file
+        📂 Select a file
       </button>
       <p className="text-gray-500 mt-3 text-sm">
         Carica un file <code>.yaml</code> o <code>.json</code>
